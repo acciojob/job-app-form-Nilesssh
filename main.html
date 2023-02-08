@@ -11,32 +11,36 @@
 	<form >
 		<div>
 		<label for="name">
-			Name*  <input type="text" placeholder="Enter Your Name" id="name"/>
+			Name*  <input type="text" placeholder="Enter Your Name" id="name" required/>
 		</label>
 		<br>
 		<label for="email">
-			Email*  <input type="email" placeholder="E-mail" id="email"/>
+			Email*  <input type="email" placeholder="E-mail" id="email"required/>
 		</label>
 		<br>
-		<label for="gender"> Gender- 
-			<br>
-			<input type="radio" id="gender"/> Male
-			<br>
-			<input type="radio" id="gender"/> Female
-			<br>
-			<input type="radio" id="gender"/> Other
-		</label>
+		Gender*
+			<label for="male" > 
+			<input type="radio" id="male" name="gender"value="male"/> Male
+			</label>
+			<label for="female" > 
+			<input type="radio" id="female"name="gender"value="female"/> Female
+			</label>
+			<label for="other" >
+			<input type="radio" id="other"name="gender" value="other"/> Other
+			</label>
 		<br>
 		<label for="laptop">
+			Laptop Brands
 			<select id="laptop">
-				<option id="apple">Apple</option>
-				<option id="asus">Asus</option>
-				<option id="hp">HP</option>
+				<option value="">--Select--</option>
+				<option id="apple" value="apple">Apple</option>
+				<option id="asus" value="asus">Asus</option>
+				<option id="hp" vlaue="hp">HP</option>
 			</select>
 		</label>
 		<br>
 		<label for="age">
-			Age <input type="number"  id="age"/>
+			Age <input type="number" min="0" max="100" id="age"/>
 		</label>
 		<br>
 		<label for="dob">
