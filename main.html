@@ -20,46 +20,44 @@
 		<br>
 		Gender*
 			<label for="male" > 
-			<input type="radio" id="male" name="gender"value="male"/> Male
+			<input type="radio" id="male" name="gender"value="male"required/> Male
 			</label>
 			<label for="female" > 
-			<input type="radio" id="female"name="gender"value="female"/> Female
+			<input type="radio" id="female"name="gender"value="female"required/> Female
 			</label>
 			<label for="other" >
-			<input type="radio" id="other"name="gender" value="other"/> Other
+			<input type="radio" id="other"name="gender" value="other"required/> Other
 			</label>
 		<br>
 		<label for="laptop">
 			Laptop Brands
 			<select id="laptop">
-				<option value="">--Select--</option>
-				<option id="apple" value="apple">Apple</option>
-				<option id="asus" value="asus">Asus</option>
+				<option id="apple" value="apple">Apple </option>
+				<option id="asus" value="asus" selected>Asus</option>
 				<option id="hp" vlaue="hp">HP</option>
 			</select>
 		</label>
 		<br>
 		<label for="age">
-			Age <input type="number" min="0" max="100" id="age"/>
+			Age <input type="number" min="0" max="100" id="age" required/>
 		</label>
 		<br>
 		<label for="dob">
-			Date of Birth <input type="date" id="dob"/>
+			Date of Birth <input type="date" id="dob" required/>
 		</label>
 		<br>
 		<label for="password">
-			Enter a Password <input type="password" id="password"/>
+			Enter a Password <input type="password" id="password" required/>
 		</label>
 		<br>
-		<label for="submit">
-			<input type="submit" id="submit">
-		</label>
-			<br>
-			<br>
 		<label for="portfolio">
-			<textarea placeholder="Enter a website URL" id="portfolio">
+			Portfolio <textarea placeholder="Enter a website URL" id="portfolio">
 				
 			</textarea>
+			<br>
+			<label for="submit">
+			<input type="submit" id="submit">
+			</label>
 		</label>
 	</div>
 	</form>
